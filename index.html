@@ -46,34 +46,61 @@
 </div>
 <section class="tables-section">
   <div class="container">
-    <table>
-      <caption>Первая таблица</caption>
-      <tr>
-        <td>Ячейка 1</td>
-        <td>Ячейка 2</td>
-        <td>Ячейка 3</td>
-      </tr>
-      <tr>
-        <td>Ячейка 4</td>
-        <td>Ячейка 5</td>
-        <td>Ячейка 6</td>
-      </tr>
-    </table>   
-    <table>
-      <caption>Вторая таблица</caption>
-      <tr>
-        <td>Ячейка 1</td>
-        <td>Ячейка 2</td>
-      </tr>
-      <tr>
-        <td>Ячейка 3</td>
-        <td>Ячейка 4</td>
-      </tr> 
-      <tr>
-        <td>Ячейка 5</td>
-        <td>Ячейка 6</td>
-      </tr> 
-    </table>
+    <div class="row">
+      <table>
+        <caption>Первая таблица</caption>
+        <tr>
+          <td rowspan="2">1</td>
+          <td colspan="2">2</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+      </table>   
+      <table>
+        <caption>Вторая таблица</caption>
+        <tr>
+          <td colspan="2">1</td>
+        </tr>
+        <tr>
+          <td rowspan="2">3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>6</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="row">
+      <table>
+        <caption>Третья таблица</caption>
+        <tr>
+          <td>1</td>
+          <td rowspan="2">2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td colspan="2">5</td>
+        </tr>
+      </table>
+      <table>
+        <caption>Четвертая таблица</caption>
+        <tr>
+          <td colspan="2">1</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td rowspan="2" colspan="2">5</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </section>
 <footer class="footer">
